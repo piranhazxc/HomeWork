@@ -1,0 +1,31 @@
+.b1 {
+  font-family: "open sans", serif;
+  font-weight: 300;
+  font-size: 30px;
+  font-style: italic;
+  line-height: 30px;
+}
+
+.b2 {
+  text-decoration: line-through;
+}
+
+.b3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.b4 {
+  word-spacing: 30px;
+  /* color: purple; */
+  /* text-decoration-line: overline; 
+  text-decoration-style: wavy;
+  text-decoration-color: purple;  */
+  text-decoration: overline wavy black;
+  text-shadow: 1px 1px 3px purple;
+}
+
+.b5 {
+  text-decoration: double underline;
+  letter-spacing: 5px;
+}
