@@ -1,0 +1,60 @@
+.burger-icon {
+  display: none;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+.burger-icon span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background: $accent-color;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background: $accent-color;
+  transition: all 0.5s;
+}
+
+.burger-icon span::before {
+  top: -8px;
+}
+
+.burger-icon span::after {
+  bottom: -8px;
+}
+
+.body--opened-menu .burger-icon span {
+  background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+  top: 0px;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.body--opened-menu .burger-icon span::after {
+  bottom: 0px;
+  transform: rotate(-45deg);
+  background-color: #fff;
+}
+
+.body--opened-menu .burger-icon {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}

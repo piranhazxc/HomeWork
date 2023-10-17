@@ -1,0 +1,6 @@
+@function clm_px($min, $width, $max) {
+	$min_px: #{$min + px};
+	$max_px: #{$max + px};
+	$width_vw: #{calc(round($max / ($width / 100) * 100000) / 100000) + vw};
+	@return clamp($min_px, $width_vw, $max_px);
+}
