@@ -1,0 +1,181 @@
+@media (max-width: 1085px) {
+
+  .footer__inner {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+
+  .footer__company,
+  .footer__socielity,
+  .footer__contact {
+    margin-left: 0px;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .media__inner {
+    grid-template: none;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .nav__list {
+    background: $accent-color;
+    color: #fff;
+    position: fixed;
+    z-index: 10;
+    inset: 0;
+    padding-top: 24px;
+    transform: translateY(-100%);
+    opacity: 1;
+    visibility: visible;
+    transition: $transition;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .nav__item:first-child {
+    padding-right: 0px;
+  }
+
+  .burger-icon {
+    display: flex;
+  }
+
+  .body--opened-menu .nav__list {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav {
+    gap: 1.5vw;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .about__inner {
+    grid-template: none;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .about__body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    background-position: 55% -10%;
+  }
+
+  .media__body-btn img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .testimonials__inner {
+    flex-direction: column;
+  }
+
+  .testimonials__nav {
+    justify-content: center;
+  }
+
+  .accordion {
+    flex-direction: column;
+  }
+
+  .accordion-list__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .contact__button {
+    position: static;
+  }
+
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer__company-item:nth-child(5) {
+    padding-bottom: 8px;
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__about-text {
+    max-width: none;
+  }
+
+  .footer__company-list,
+  .footer__socielity-list {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .footer__company-item,
+  .footer__company-item:nth-child(5),
+  .footer__socielity-item {
+    padding-bottom: 0px;
+  }
+
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .hero {
+    background-position: 43% -10%;
+  }
+
+  .media__body-title h3:first-child {
+    padding-bottom: 0px;
+  }
+
+  .media__body-title {
+    line-height: 1.2;
+    transform: rotate(55deg);
+  }
+
+  .nav__button {
+    width: auto;
+  }
+}
